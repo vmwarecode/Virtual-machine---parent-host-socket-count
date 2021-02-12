@@ -1,0 +1,10 @@
+{"4ea3d18c-b613-4662-a173-b6ce6bb1c7bb": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1613154015037,
+   "name": "VM parent host socket count",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=HostSystem, attribute=hardware|cpuInfo|numCpuPackages, depth=-1})",
+   "description": ""
+}}
